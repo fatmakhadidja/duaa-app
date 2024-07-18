@@ -404,19 +404,19 @@ class _EmotionsState extends State<Emotions> {
             SizedBox(height: 30),
             buildEmotionRow('Nervous', 'متوتر', Color(0xFFFACF8D), 'Happy', 'سعيد', Color(0xFF9DEDB8)),
             SizedBox(height: 30),
-            buildEmotionRow('Guilty', 'مذنب', Color(0xFFD58795), 'Jealous', 'غيور', Color(0xFFA2FCFC)),
+            buildEmotionRow('Guilty', 'مذنب', Color(0xFFD58795), 'Jealous', 'غيور', Color(0xFFCBDF91)),
             SizedBox(height: 30),
             buildEmotionRow('Lonely', 'وحيد', Color(0xFFA5BBB3), 'Weak', 'ضعيف', Color(0xFFA6A5BB)),
             SizedBox(height: 30),
             buildEmotionRow('Scared', 'خائف', Color(0xFFFACF8D), 'Tired', 'مرهق', Color(0xFF9DEDB8)),
             SizedBox(height: 30),
-            buildEmotionRow('Lazy', 'كسول', Color(0xFFD58795), 'Indecisive', 'متردد', Color(0xFFA2FCFC)),
+            buildEmotionRow('Lazy', 'كسول', Color(0xFFD58795), 'Indecisive', 'متردد', Color(0xFFCBDF91)),
             SizedBox(height: 30),
             buildEmotionRow('Suicidal', 'انتحاري', Color(0xFFA5BBB3), 'Greedy', 'طماع', Color(0xFFA6A5BB)),
             SizedBox(height: 30),
             buildEmotionRow('Unloved', 'غير محبوب', Color(0xFFFACF8D), 'Deppressed', 'مكتئب', Color(0xFF9DEDB8)),
             SizedBox(height: 30),
-            buildEmotionRow('Anxious', 'قلق', Color(0xFFD58795), 'Bored', 'ضجر', Color(0xFFA2FCFC)),
+            buildEmotionRow('Anxious', 'قلق', Color(0xFFD58795), 'Bored', 'ضجر', Color(0xFFCBDF91)),
             SizedBox(height: 30),
           ],
         ),
@@ -450,6 +450,12 @@ class _EmotionsState extends State<Emotions> {
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(15),
+          boxShadow:[
+              BoxShadow (
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 20,
+              spreadRadius: 7
+          ),]
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,  // handles the centering of the texts inside the containers
@@ -457,16 +463,16 @@ class _EmotionsState extends State<Emotions> {
             Text(
               text,
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 16,
                 color: Colors.white,
                 fontFamily: 'Jaldi',
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 5),
             Text(
               arabicText,
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 16,
                 color: Colors.white,
                 fontFamily: 'Jaldi',
               ),

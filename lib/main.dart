@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'emotions.dart';
 import 'package:duaa_app/duaa.dart';
+import 'package:flutter_animated_button/flutter_animated_button.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -36,7 +37,8 @@ class _WelcomeState extends State<Welcome> {
           ),
           const Positioned(
             top: 381,
-            left: 150,
+            left: 145,
+            right: 145,
             child: Text(
               'Dua &',
               style: TextStyle(
@@ -48,7 +50,8 @@ class _WelcomeState extends State<Welcome> {
           ),
           const Positioned(
             top: 435,
-            left: 120,
+            left: 110,
+            right: 110,
             child: Text(
               'Emotions',
               style: TextStyle(
@@ -59,45 +62,31 @@ class _WelcomeState extends State<Welcome> {
             ),
           ),
           Positioned(
-            top: 600,
-            left: 132,
-            child: GestureDetector(
-              onTap: () {
+            top: 550,
+            left: 120,
+            right: 120,
+            child: ElevatedButton(
+              onPressed: () {
                 Navigator.pushNamed(context, '/emotions');
               },
-              onLongPressStart: (_) {
-                setState(() {
-                  _isPressed = true;
-                });
-              },
-              onLongPressEnd: (_) {
-                setState(() {
-                  _isPressed = false;
-                });
-              },
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 100),
-                height: 45,
-                width: 157,
-                decoration: BoxDecoration(
-                  color: _isPressed ? Colors.white : _color,
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                child: Center(
-                  child: Text(
-                    'Start now',
-                    style: TextStyle(
-                      fontFamily: 'Jaldi',
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF4C7766),
-                    ),
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Text(
+                  'Start now',
+                  style: TextStyle(
+                    fontFamily: 'Jaldi',
+                    fontSize: 18,
+                    color: Colors.white,
                   ),
                 ),
               ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.white.withOpacity(0.5)), // Set the desired color here
+                animationDuration: Duration(seconds: 3)
+              ),
             ),
           ),
-        ],
+            ],
       ),
     );
   }

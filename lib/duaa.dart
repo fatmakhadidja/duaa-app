@@ -1,41 +1,61 @@
 import 'package:flutter/material.dart';
 
 class Duaa extends StatefulWidget {
-  const Duaa({super.key});
+  const Duaa({Key? key}) : super(key: key);
 
   @override
   State<Duaa> createState() => _DuaaState();
 }
 
 class _DuaaState extends State<Duaa> {
- Map data = {};
+  Map data = {};
 
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)?.settings.arguments as Map?;
     if (args != null) {
-      data = args ;
+      data = args;
     }
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
           child: Column(
             children: [
-              Positioned(
-
-                  child: Text(
-                    '${data['emotion']} ?',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800,
-                      fontFamily: 'Jaldi',
-                      color: data['color'],
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 45, 0, 0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: data['color'],
+                          size: 35,
+                        ),
+                      ),
+                    ),
+                    Expanded (
+                    child: Center(
+                      child: Text(
+                        '${data['emotion']} ?',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Jaldi',
+                          color: data['color'],
+                        ),
+                      ),
                     ),
                   ),
+                  ],
+                ),
+
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20,0, 20, 0),
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: ListView.builder(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
@@ -44,11 +64,16 @@ class _DuaaState extends State<Duaa> {
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        Divider(
+                          color: data['color'],
+                          thickness: 1.5,
+                        ),
+                        SizedBox(height: 15),
                         Text(
                           '${data['duaaList'][index * 2]}\n',
                           textDirection: TextDirection.rtl,
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 16,
                             fontFamily: 'Jaldi',
                           ),
                         ),
@@ -56,15 +81,11 @@ class _DuaaState extends State<Duaa> {
                           '${data['duaaList'][index * 2 + 1]}\n',
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 15,
                             fontFamily: 'Jaldi',
                           ),
                         ),
-                        Divider(
-                          color: data['color'],
-                          thickness: 1,
-                          indent: 20,
-                        ),
+
                       ],
                     );
                   },
@@ -73,7 +94,6 @@ class _DuaaState extends State<Duaa> {
             ],
           ),
         ),
-      ),
     );
   }
 }
