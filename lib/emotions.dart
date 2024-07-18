@@ -71,7 +71,7 @@ class _EmotionsState extends State<Emotions> {
     'O Allah, all praise is due to You. You are the Truth, Your promise is true, meeting with You is true, Paradise is true, Hellfire is true, the Prophets are true, and Muhammad (peace be upon him) is true. The Hour is true. O Allah, I have submitted to You, believed in You, entrusted my affairs to You, turned to You, contended with You, and sought judgment from You. Forgive me for what I have done in the past and what I will do in the future, what I have hidden and what I have made public.',
     ' اللَّهُمَّ أَجِرْنِي مِنْ شَرِّ مَا قَدَّرْتَ، وَاحْصِنِي مِنْ شَرِّ مَا قَدَّرْتَ، فَإِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.',
     'O Allah, protect me from the evil You have decreed. For You decree and none can decree over You. None humiliated whom You have befriended. Blessed are You, our Lord, and Exalted.',
-    'اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَامِ',
+    'اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَام.ِ',
     'O Allah, You are Peace, and from You is peace. Blessed are You, O Majestic and Generous.'
   ];
 
