@@ -7,11 +7,11 @@ PS :
 - a video that demonstrates the functionality of the app can be found in the assets directory.
 
 First page :
-- When the users first enters the application he will encounter a simple page containing the name and the logo of the mobile application :
+- When the user first enters the application he will encounter a simple page containing the name and the logo of the mobile application :
 ![Screenshot 2024-07-19 112417](https://github.com/user-attachments/assets/99573265-2d60-4f04-b0e2-0fe692ab6d17)
 
 Emotions page :
-- When he clicks on the "Start now" button, the app takes him to a page that contains a collection of the most common humans emotions : 
+- When he clicks on the "Start now" button, the app takes him to a page that contains a collection of the most common human's emotions : 
 ![Screenshot 2024-07-19 112612](https://github.com/user-attachments/assets/e0889997-4a60-4533-8d1a-fe231e29bc87)
 
 Duaas page :
