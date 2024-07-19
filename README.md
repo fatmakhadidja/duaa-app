@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4f2820c9-7bcb-467b-8359-a39cc2a6a775)# duaa_app
+# duaa_app
 
 An islamic mobile app built using flutter , it contains ad'iyaa to handle human emotions.
 
