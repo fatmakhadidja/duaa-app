@@ -1,6 +1,6 @@
 # Duaa & Emotions
 ## Description of the application :
-An islamic mobile app built using flutter , it contains ad'iyaa to handle human emotions.
+Duaa & Emotions is an islamic mobile app built using flutter , it contains ad'iyaa to handle human emotions.
 
 PS :
 - the code for the pages of the mobile application can be found in the lib directory.
