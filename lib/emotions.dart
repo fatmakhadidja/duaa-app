@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:duaa_app/duaa.dart';
+
 
 class Emotions extends StatefulWidget {
   const Emotions({Key? key}) : super(key: key);

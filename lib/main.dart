@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'emotions.dart';
 import 'package:duaa_app/duaa.dart';
-import 'package:flutter_animated_button/flutter_animated_button.dart';
 
 void main() {
   runApp(MaterialApp(
